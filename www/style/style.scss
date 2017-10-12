@@ -1,0 +1,93 @@
+@font-face {
+	font-family: 'Typewriter';
+	src: url('/fonts/bohemian-typewriter.ttf') format('truetype');
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	background: white url(/img/background.jpg) no-repeat top center;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	font-family: 'Typewriter', Verdana;
+	font-size: 15px;
+}
+
+.container-fluid {
+	max-width: 1100px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 0;
+	padding-right: 0;
+
+	header {
+		width: 100%;
+		display: block;
+		text-align: center;
+		margin: 15px 0;
+
+		& > a {
+			display: inline-block;
+		}
+
+		nav {
+			&.navbar-default {
+				background-color: rgba(255, 255, 255, 0.9);
+				margin-bottom: 15px;
+				border-radius: 0;
+				border: 1px solid #d0d0d0;
+			}
+		}
+
+		img.logo {
+			display: inline-block;
+		}
+
+		img.cover {
+			box-shadow: rgba(24, 24, 24, 0.5) 5px 5px 12px;
+		}
+	}
+
+	main {
+
+		.block {
+			background: rgba(15, 15, 15, 0.9);
+			padding: 20px;
+			box-shadow: rgba(24, 24, 24, 0.5) 5px 5px 12px;
+			margin-bottom: 15px;
+			color: #f5f5f5;
+		}
+
+		h2 {
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+
+		p {
+			line-height: 24px;
+			margin: 0 0 14px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	footer {
+		font-size: 13px;
+		line-height: 20px;
+		text-align: center;
+		padding: 0 10px 15px;
+	}
+}
+
+.cc-window {
+	color: #f5f5f5;
+	font-family: 'Typewriter', Verdana;
+	font-size: 14px;
+}
