@@ -28,11 +28,30 @@ body {
     margin: 15px 0; }
     .container-fluid header > a {
       display: inline-block; }
-    .container-fluid header nav.navbar-default {
+    .container-fluid header .navbar-default {
       background-color: rgba(255, 255, 255, 0.9);
       margin-bottom: 15px;
-      border-radius: 0;
-      border: 1px solid #d0d0d0; }
+      margin-top: 15px;
+      border: 1px solid #d0d0d0;
+      min-height: unset; }
+      .container-fluid header .navbar-default, .container-fluid header .navbar-default .dropdown-menu {
+        border-radius: 0; }
+      .container-fluid header .navbar-default .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #232323; }
+      .container-fluid header .navbar-default .navbar-nav > li.active > a {
+        color: #EC0013;
+        background-color: transparent !important; }
+      .container-fluid header .navbar-default .navbar-nav > li:hover > a {
+        color: #EC0013; }
+      @media (min-width: 768px) {
+        .container-fluid header .navbar-default .navbar-nav {
+          text-align: center;
+          width: 100%; }
+          .container-fluid header .navbar-default .navbar-nav > li {
+            display: inline-block;
+            float: none; } }
     .container-fluid header img.logo {
       display: inline-block; }
     .container-fluid header img.cover {

@@ -1,3 +1,5 @@
+$red-highlight: #EC0013;
+
 @font-face {
 	font-family: 'Typewriter';
 	src: url('/fonts/bohemian-typewriter.ttf') format('truetype');
@@ -36,12 +38,44 @@ body {
 			display: inline-block;
 		}
 
-		nav {
-			&.navbar-default {
-				background-color: rgba(255, 255, 255, 0.9);
-				margin-bottom: 15px;
+		.navbar-default {
+			background-color: rgba(255, 255, 255, 0.9);
+			margin-bottom: 15px;
+			margin-top: 15px;
+			border: 1px solid #d0d0d0;
+			min-height: unset;
+
+			&, .dropdown-menu {
 				border-radius: 0;
-				border: 1px solid #d0d0d0;
+			}
+
+			.navbar-nav {
+
+				& > li > a {
+					padding-top: 10px;
+					padding-bottom: 10px;
+					color: #232323;
+				}
+
+				& > li.active > a {
+					color: $red-highlight;
+					background-color: transparent !important;
+				}
+
+				& > li:hover > a {
+					color: $red-highlight;
+				}
+			}
+
+			@media (min-width: 768px) {
+				.navbar-nav {
+					text-align: center;
+					width: 100%;
+					& > li {
+						display: inline-block;
+						float: none;
+					}
+				}
 			}
 		}
 
