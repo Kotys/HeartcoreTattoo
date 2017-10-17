@@ -15,73 +15,90 @@ body {
   font-family: 'Typewriter', Verdana;
   font-size: 15px; }
 
-.container-fluid {
+.site a.fb-link {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  opacity: 0.7;
+  transition: 0.2s; }
+  .site a.fb-link:hover {
+    opacity: 1; }
+  .site a.fb-link img {
+    max-width: 45px; }
+.site .container-fluid {
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 0;
   padding-right: 0; }
-  .container-fluid header {
+  .site .container-fluid header {
     width: 100%;
     display: block;
-    text-align: center;
     margin: 15px 0;
     font-size: 16px; }
-    .container-fluid header > a {
+    .site .container-fluid header > a {
       display: inline-block; }
-    .container-fluid header .navbar-default {
+    .site .container-fluid header .navbar-default {
       background-color: rgba(255, 255, 255, 0.9);
       margin-bottom: 15px;
       margin-top: 15px;
       border: 1px solid #d0d0d0;
       min-height: unset; }
-      .container-fluid header .navbar-default, .container-fluid header .navbar-default .dropdown-menu {
+      .site .container-fluid header .navbar-default, .site .container-fluid header .navbar-default .dropdown-menu {
         border-radius: 0; }
-      .container-fluid header .navbar-default .navbar-nav > li > a {
+      .site .container-fluid header .navbar-default .navbar-nav > li > a {
         padding-top: 10px;
         padding-bottom: 10px;
         color: #232323; }
-      .container-fluid header .navbar-default .navbar-nav > li:hover > a, .container-fluid header .navbar-default .navbar-nav > li.open > a, .container-fluid header .navbar-default .navbar-nav > li.active > a {
+      .site .container-fluid header .navbar-default .navbar-nav > li:hover > a, .site .container-fluid header .navbar-default .navbar-nav > li.open > a, .site .container-fluid header .navbar-default .navbar-nav > li.active > a {
         color: #EC0013;
         background-color: rgba(109, 110, 113, 0.1) !important; }
-      .container-fluid header .navbar-default .dropdown-menu > li > a {
+      .site .container-fluid header .navbar-default .dropdown-menu > li > a {
         padding-top: 6px;
         padding-bottom: 6px; }
-      .container-fluid header .navbar-default .dropdown-menu > li > a:hover {
+      .site .container-fluid header .navbar-default .dropdown-menu > li > a:hover {
         color: #EC0013; }
       @media (min-width: 768px) {
-        .container-fluid header .navbar-default .navbar-nav {
+        .site .container-fluid header .navbar-default .navbar-nav {
           text-align: center;
           width: 100%; }
-          .container-fluid header .navbar-default .navbar-nav > li {
+          .site .container-fluid header .navbar-default .navbar-nav > li {
             display: inline-block;
             float: none; } }
     @media (max-width: 1100px) {
-      .container-fluid header .navbar-default {
+      .site .container-fluid header .navbar-default {
         border-left: 0;
         border-right: 0; } }
-    .container-fluid header img.logo {
-      display: inline-block; }
-    @media (max-width: 768px) {
-      .container-fluid header img.logo {
-        width: 50%; } }
-    .container-fluid header img.cover {
+    .site .container-fluid header a.web-logo {
+      margin: auto;
+      display: block;
+      max-width: 275px; }
+      .site .container-fluid header a.web-logo img.logo {
+        width: 100%; }
+    .site .container-fluid header img.cover {
       box-shadow: rgba(24, 24, 24, 0.5) 5px 5px 12px; }
-  .container-fluid main .block {
+    @media (max-width: 768px) {
+      .site .container-fluid header a.web-logo {
+        margin: 0 0 0 10px;
+        width: 65%;
+        max-width: unset; }
+      .site .container-fluid header img.cover {
+        height: 200px; } }
+  .site .container-fluid main .block {
     background: rgba(15, 15, 15, 0.9);
     padding: 20px;
     box-shadow: rgba(24, 24, 24, 0.5) 5px 5px 12px;
     margin-bottom: 15px;
     color: #f5f5f5; }
-  .container-fluid main h2 {
+  .site .container-fluid main h2 {
     margin-top: 0;
     margin-bottom: 20px; }
-  .container-fluid main p {
-    line-height: 24px;
+  .site .container-fluid main p {
+    line-height: 26px;
     margin: 0 0 14px; }
-    .container-fluid main p:last-child {
+    .site .container-fluid main p:last-child {
       margin-bottom: 0; }
-  .container-fluid footer {
+  .site .container-fluid footer {
     font-size: 13px;
     line-height: 20px;
     text-align: center;

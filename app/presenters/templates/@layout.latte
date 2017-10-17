@@ -15,121 +15,98 @@
 <body>
 <div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
 
-<div class="container-fluid">
-	<header>
-		<a href="/">
-			<img src="{$baseUrl}/img/logo.png" alt="" class="logo">
-		</a>
-
-		<nav class="navbar navbar-default">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-						data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand visible-xs" href="/">HeartcoreTattoo.cz</a>
-			</div>
-
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					{*<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>*}
-					{*<li><a href="#">Link</a></li>*}
+<div class="site">
+	<a class="fb-link" href="https://www.facebook.com/heartcoretattoo/" target="_blank"><img src="{$basePath}/img/fb-icon.png"></a>
 
 
-					<li class="dropdown active">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-						   aria-expanded="false">TATTOO <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">INFORMACE</a></li>
-							<li><a href="#">CENÍK</a></li>
-							<li><a href="#">PÉČE O TETOVÁNÍ</a></li>
-							{*<li><a href="#">Another action</a></li>*}
-							{*<li><a href="#">Something else here</a></li>*}
-							{*<li role="separator" class="divider"></li>*}
-							{*<li><a href="#">Separated link</a></li>*}
-							{*<li role="separator" class="divider"></li>*}
-							{*<li><a href="#">One more separated link</a></li>*}
-						</ul>
-					</li>
+	<div class="container-fluid">
+		<header>
+			<a href="/" class="web-logo">
+				<img src="{$baseUrl}/img/logo.png" alt="" class="logo">
+			</a>
 
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-						   aria-expanded="false">PIERCING <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">INFORMACE</a></li>
-							<li><a href="#">CENÍK</a></li>
-							<li><a href="#">PÉČE O PIERCING</a></li>
-							{*<li><a href="#">Another action</a></li>*}
-							{*<li><a href="#">Something else here</a></li>*}
-							{*<li role="separator" class="divider"></li>*}
-							{*<li><a href="#">Separated link</a></li>*}
-							{*<li role="separator" class="divider"></li>*}
-							{*<li><a href="#">One more separated link</a></li>*}
-						</ul>
-					</li>
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand visible-xs" href="/">HeartcoreTattoo.cz</a>
+				</div>
 
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-						   aria-expanded="false">SCARIFIKACE <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">INFORMACE</a></li>
-							<li><a href="#">CENÍK</a></li>
-							<li><a href="#">GALERIE</a></li>
-							{*<li><a href="#">Another action</a></li>*}
-							{*<li><a href="#">Something else here</a></li>*}
-							{*<li role="separator" class="divider"></li>*}
-							{*<li><a href="#">Separated link</a></li>*}
-							{*<li role="separator" class="divider"></li>*}
-							{*<li><a href="#">One more separated link</a></li>*}
-						</ul>
-					</li>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							   aria-expanded="false">TATTOO <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a n:href="Article:default">INFORMACE</a></li>
+								<li><a n:href="Article:default">CENÍK</a></li>
+								<li><a n:href="Article:default">PÉČE O TETOVÁNÍ</a></li>
+							</ul>
+						</li>
 
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-						   aria-expanded="false">ODSTRANĚNÍ TETOVÁNÍ <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">INFORMACE</a></li>
-							<li><a href="#">CENÍK</a></li>
-							<li><a href="#">GALERIE</a></li>
-							{*<li><a href="#">Another action</a></li>*}
-							{*<li><a href="#">Something else here</a></li>*}
-							{*<li role="separator" class="divider"></li>*}
-							{*<li><a href="#">Separated link</a></li>*}
-							{*<li role="separator" class="divider"></li>*}
-							{*<li><a href="#">One more separated link</a></li>*}
-						</ul>
-					</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							   aria-expanded="false">PIERCING <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a n:href="Article:default">INFORMACE</a></li>
+								<li><a n:href="Article:default">CENÍK</a></li>
+								<li><a n:href="Article:default">PÉČE O PIERCING</a></li>
+							</ul>
+						</li>
 
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-						   aria-expanded="false">UKÁZKY PRÁCE <span class="caret"></span></a>
-						<ul class="dropdown-menu">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							   aria-expanded="false">SCARIFIKACE <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a n:href="Article:default">INFORMACE</a></li>
+								<li><a n:href="Article:default">CENÍK</a></li>
+								<li><a n:href="Article:default">GALERIE</a></li>
+							</ul>
+						</li>
 
-							<li><a href="#">VIKTOR - TETOVÁNÍ</a></li>
-							<li><a href="#">HORST - TETOVÁNÍ</a></li>
-							<li><a href="#">PIERCING</a></li>
-							<li><a href="#">SCARIFIKACE</a></li>
-							<li><a href="#">ODSTRANĚNÍ TETOVÁNÍ</a></li>
-						</ul>
-					</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							   aria-expanded="false">ODSTRANĚNÍ TETOVÁNÍ <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a n:href="Article:default">INFORMACE</a></li>
+								<li><a n:href="Article:default">CENÍK</a></li>
+								<li><a n:href="Article:default">GALERIE</a></li>
+							</ul>
+						</li>
 
-					<li><a href="#">KONTAKT</a></li>
-				</ul>
-			</div>
-		</nav>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							   aria-expanded="false">UKÁZKY PRÁCE <span class="caret"></span></a>
+							<ul class="dropdown-menu">
 
-		<img src="{$baseUrl}/img/cover.jpg" alt="" class="cover">
-	</header>
-	<main>
-		{include content}
-	</main>
-	<footer>
-		HeartcoreTattoo.cz {date('Y')}<br>
-		Realizace <a href="https://jkotrba.net" target="_blank">Jan&nbsp;Kotrba</a>
-	</footer>
+								<li><a n:href="Article:default">VIKTOR - TETOVÁNÍ</a></li>
+								<li><a n:href="Article:default">HORST - TETOVÁNÍ</a></li>
+								<li><a n:href="Article:default">PIERCING</a></li>
+								<li><a n:href="Article:default">SCARIFIKACE</a></li>
+								<li><a n:href="Article:default">ODSTRANĚNÍ TETOVÁNÍ</a></li>
+							</ul>
+						</li>
+
+						<li><a n:href="Article:default">KONTAKT</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<img n:if="$presenter->isLinkCurrent('Homepage:default')" src="{$baseUrl}/img/cover.jpg" alt="" class="cover">
+		</header>
+		<main>
+			{include content}
+		</main>
+		<footer>
+			HeartcoreTattoo.cz {date('Y')}<br>
+			Realizace <a href="https://jkotrba.net" target="_blank">Jan&nbsp;Kotrba</a>
+		</footer>
+	</div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
