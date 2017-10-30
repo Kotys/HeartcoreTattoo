@@ -1,0 +1,10 @@
+<ul>
+	<li n:foreach="$navigation->getNavigationItems() as $item">
+		<b>{$item->getTitle()}</b>
+		<ul n:if="$item->hasNavigationItems()">
+			<li n:foreach="$item->getNavigationItems() as $childItem">
+				<i>{$childItem->getTitle()}</i>
+			</li>
+		</ul>
+	</li>
+</ul>
