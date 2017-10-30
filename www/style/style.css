@@ -66,6 +66,8 @@ body {
             display: inline-block;
             float: none; } }
     @media (max-width: 1100px) {
+      .site .container-fluid header a.web-logo {
+        width: 300px; }
       .site .container-fluid header .navbar-default {
         border-left: 0;
         border-right: 0; } }
@@ -80,10 +82,10 @@ body {
     @media (max-width: 768px) {
       .site .container-fluid header a.web-logo {
         margin: 0 0 0 10px;
-        width: 65%;
-        max-width: unset; }
+        width: 200px; }
       .site .container-fluid header img.cover {
-        height: 200px; } }
+        width: 100vw;
+        min-width: 600px; } }
   .site .container-fluid main .block {
     background: rgba(15, 15, 15, 0.9);
     padding: 20px;

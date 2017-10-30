@@ -37,64 +37,7 @@
 					<a class="navbar-brand visible-xs" href="/">HeartcoreTattoo.cz</a>
 				</div>
 
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-							   aria-expanded="false">TATTOO <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a n:href="Article:default">INFORMACE</a></li>
-								<li><a n:href="Article:default">CENÍK</a></li>
-								<li><a n:href="Article:default">PÉČE O TETOVÁNÍ</a></li>
-							</ul>
-						</li>
-
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-							   aria-expanded="false">PIERCING <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a n:href="Article:default">INFORMACE</a></li>
-								<li><a n:href="Article:default">CENÍK</a></li>
-								<li><a n:href="Article:default">PÉČE O PIERCING</a></li>
-							</ul>
-						</li>
-
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-							   aria-expanded="false">SCARIFIKACE <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a n:href="Article:default">INFORMACE</a></li>
-								<li><a n:href="Article:default">CENÍK</a></li>
-								<li><a n:href="Article:default">GALERIE</a></li>
-							</ul>
-						</li>
-
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-							   aria-expanded="false">ODSTRANĚNÍ TETOVÁNÍ <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a n:href="Article:default">INFORMACE</a></li>
-								<li><a n:href="Article:default">CENÍK</a></li>
-								<li><a n:href="Article:default">GALERIE</a></li>
-							</ul>
-						</li>
-
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-							   aria-expanded="false">UKÁZKY PRÁCE <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-
-								<li><a n:href="Article:default">VIKTOR - TETOVÁNÍ</a></li>
-								<li><a n:href="Article:default">HORST - TETOVÁNÍ</a></li>
-								<li><a n:href="Article:default">PIERCING</a></li>
-								<li><a n:href="Article:default">SCARIFIKACE</a></li>
-								<li><a n:href="Article:default">ODSTRANĚNÍ TETOVÁNÍ</a></li>
-							</ul>
-						</li>
-
-						<li><a n:href="Article:default">KONTAKT</a></li>
-					</ul>
-				</div>
+				{control navigationControl, 'default'}
 			</nav>
 
 			<img n:if="$presenter->isLinkCurrent('Homepage:default')" src="{$baseUrl}/img/cover.jpg" alt="" class="cover">

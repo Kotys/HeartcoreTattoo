@@ -12,4 +12,20 @@ session:
 
 
 services:
+	# ContentModule
+	- KotysPackages\ContentModule\Article\Repository\ArticleRepository
+	- KotysPackages\ContentModule\Article\Service\ArticlesRouting
+	- KotysPackages\ContentModule\Navigation\Repository\NavigationRepository
+	- KotysPackages\ContentModule\Navigation\Control\NavigationControl
 	router: App\RouterFactory::createRouter
+	
+extensions:
+	console: Kdyby\Console\DI\ConsoleExtension
+	events: Kdyby\Events\DI\EventsExtension
+	annotations: Kdyby\Annotations\DI\AnnotationsExtension
+	doctrine: Kdyby\Doctrine\DI\OrmExtension
+
+doctrine:
+	metadata:
+		KotysPackages: ../src
+		App: %appDir%

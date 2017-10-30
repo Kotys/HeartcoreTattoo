@@ -8,9 +8,9 @@
 
 namespace App\Presenters;
 
-use Nette\Application\UI\Presenter;
+use KotysPackages\ContentModule\Article\Presenter\BaseArticlePresenter;
 
-class ArticlePresenter extends Presenter
+class ArticlePresenter extends BaseArticlePresenter
 {
 
 }
